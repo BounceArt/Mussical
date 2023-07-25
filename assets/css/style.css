@@ -47,7 +47,6 @@ html, body{
     text-decoration: none;
 }
 #caja1 a:hover{
-    text-decoration: underline;
     cursor: pointer;
 }
   .logo img {
