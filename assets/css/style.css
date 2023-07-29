@@ -125,3 +125,16 @@ section article button{
     margin: auto;
     max-width: 400px;  
 }
+.card-body{
+    background-color: #1a1a1a;
+}
+.card-body h5{
+    color: #f9c433;
+    font-family: Roboto mono;
+}
+.card-body p{
+    color: rgb(255, 255, 255);
+}
+.card-body a{
+    font-family: Roboto mono;
+}
