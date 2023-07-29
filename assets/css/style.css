@@ -141,3 +141,7 @@ section article button{
 .container{
     padding-top: 80px;
 }
+.card-img-top{
+    width: 100%;
+    height: 600px; 
+}
