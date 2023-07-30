@@ -145,3 +145,8 @@ section article button{
     width: 100%;
     height: 600px; 
 }
+@media (min-width: 992px) {
+    .row {
+      margin-left: 50px;
+    }
+  }
