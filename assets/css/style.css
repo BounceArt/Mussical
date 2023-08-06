@@ -1,158 +1,57 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;            
+@font-face {
+  font-family: Akira;
+  src: url(../font/Akira\ Expanded\ Demo.ttf);
 }
 @font-face {
-    font-family: Akira;
-    src: url(../font/Akira\ Expanded\ Demo.ttf);
+  font-family: Roboto mono;
+  src: url(../font/RobotoMono-VariableFont_wght.ttf);
+  font-weight: 400;
 }
-@font-face {
-    font-family: Roboto mono;
-    src: url(../font/RobotoMono-VariableFont_wght.ttf);
-    font-weight: 400;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    height: 100%;
+
+html {
+  height: 100%;
 }
-body{
-    background-color: #0d1011;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+
+body {
+  background-color: #0d1011;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
-#caja1{
-    font-family: Akira;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    border-bottom: solid;
-    border-color: #f9c433;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;     
+
+#caja1 {
+  font-family: Akira;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-bottom: solid;
+  border-color: #f9c433;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
-#caja1 ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline-block;
+#caja1 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
 }
-#caja1 ul li{
-    display: inline-block;
-    padding: 11px;
+#caja1 li {
+  display: inline-block;
+  padding: 11px;
 }
-#caja1 ul li a{
-    color: #f9c433;
-    padding: 1px;
-    text-decoration: none;
+#caja1 a {
+  color: #f9c433;
+  padding: 1px;
+  text-decoration: none;
 }
-#caja1 a:hover{
-    cursor: pointer;
-}
-  .logo img {
-    width: 70px;
-    height: 53px;
-    margin-right: 95%;
-    margin-bottom: 1%;
-    position: fixed;
-    z-index: 2;
-}
-h1{
-    font-family: Akira;
-    font-size: 120%;
-    color: #f9c433;
-    text-align: center;  
-}
-h2{
-    font-family: Akira;
-    font-size: 130%;
-    color: #f9c433;
-    text-align: center;
-    padding-top: 7%;
-}
-p{
-    color: white;
-    font-family: Roboto mono;
-    padding-left: 1%;
-}
-footer{
-    background-color: rgb(0, 0, 0);
-    border-top: solid;
-    border-color: #f9c433;
-    text-align: center;
-    margin-top: auto;
-    width: 100%;
-    height: 24%;
-}
-footer h3{
-    font-family: Akira;
-    font-size: 20px;
-    color: #f9c433;
-    padding-top: 4px;
-    margin-bottom: 75px;
-}
-footer ul li{
-    display: inline-block;
-    padding-left: 2%; 
-}
-footer ul li a{
-    font-family: Akira;
-    color: #f9c433;
-    text-decoration: none;
-    padding-inline: 95px;
-    padding-left: 2rem;
-}
-.link-imagen img{
-    width: 40px;
-}
-section article{
-    font-family: Akira;
-    color: #f9c433;
-    margin: 0 auto;
-    display: grid;
-    max-width: 500px;
-}
-section article button{
-    height: 30px;
-    margin-top: 4%
-}
-.form{
-    font-family: Akira;
-    color: #f9c433;
-    margin: auto;
-    max-width: 400px;  
-}
-.card-body{
-    background-color: #1a1a1a;
-}
-.card-body h5{
-    color: #f9c433;
-    font-family: Roboto mono;
-}
-.card-body p{
-    color: rgb(255, 255, 255);
-}
-.card-body a{
-    font-family: Roboto mono;
-}
-.container{
-    padding-top: 80px;
-}
-.card-img-top{
-    width: 100%;
-    height: 600px;
-    max-height: 14rem; 
-}
-@media (min-width: 992px) {
-    .row {
-      margin-left: 50px;
-    }
-  }
-.card{
-   flex: 1 0 18rem;
-   margin: 0.5rem;
-   min-height: 10rem; 
-}
+#caja1 a:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
