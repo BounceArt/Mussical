@@ -1,3 +1,6 @@
+$color-a: #f9c433;
+$font-1: Akira;
+$font-2: Roboto mono;
 @font-face {
    font-family: Akira;
    src: url(../font/Akira\ Expanded\ Demo.ttf);
@@ -22,13 +25,13 @@ body{
    min-height: 100%;
 }
 #caja1{
-    font-family: Akira;
+    font-family: $font-1;
     width: 100%;
     text-align: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
     border-bottom: solid;
-    border-color: #f9c433;
+    border-color: $color-a;
     position: fixed;
     top: 0;
     left: 0;
@@ -44,7 +47,7 @@ body{
             padding: 11px;
             }
                  a{
-                    color: #f9c433;
+                    color: $color-a;
                     padding: 1px;
                     text-decoration: none;
                     }
