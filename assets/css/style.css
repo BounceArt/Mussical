@@ -130,4 +130,11 @@ section article button {
   margin-top: 4%;
 }
 
+.form {
+  font-family: Akira;
+  color: Roboto mono;
+  margin: auto;
+  max-width: 400px;
+}
+
 /*# sourceMappingURL=style.css.map */
