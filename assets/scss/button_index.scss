@@ -1,0 +1,11 @@
+section article{
+    font-family: $font-1;
+    color: $color-a;
+    margin: 0 auto;
+    display: grid;
+    max-width: 500px;
+    button{
+        height: 30px;
+        margin-top: 4%
+    }
+}
