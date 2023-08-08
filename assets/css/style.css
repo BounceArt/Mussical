@@ -137,4 +137,28 @@ section article button {
   max-width: 400px;
 }
 
+.card-body {
+  background-color: #1a1a1a;
+}
+.card-body h5 {
+  color: #f9c433;
+  font-family: Roboto mono;
+}
+.card-body p {
+  color: rgb(255, 255, 255);
+}
+.card-body a {
+  font-family: Roboto mono;
+}
+
+.container {
+  padding-top: 80px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 600px;
+  max-height: 14rem;
+}
+
 /*# sourceMappingURL=style.css.map */
