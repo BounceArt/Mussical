@@ -1,3 +1,44 @@
+#caja1 {
+  font-family: Akira;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-bottom: solid;
+  border-color: #f9c433;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#caja1 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+#caja1 li {
+  display: inline-block;
+  padding: 11px;
+}
+#caja1 a {
+  color: #f9c433;
+  padding: 1px;
+  text-decoration: none;
+}
+#caja1 a:hover {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 70px;
+  height: 53px;
+  margin-right: 95%;
+  margin-bottom: 1%;
+  position: fixed;
+  z-index: 2;
+}
+
 footer {
   background-color: rgb(0, 0, 0);
   border-top: solid;

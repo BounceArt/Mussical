@@ -1,0 +1,39 @@
+#caja1 {
+    font-family: $font-1;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-bottom: solid;
+    border-color: $color-a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;   
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+    }  
+    li{
+        display: inline-block;
+        padding: 11px;
+    }
+    a{
+        color: $color-a;
+        padding: 1px;
+        text-decoration: none;
+    }
+    a:hover{
+        cursor: pointer;
+    }
+}
+.logo img{
+    width: 70px;
+    height: 53px;
+    margin-right: 95%;
+    margin-bottom: 1%;
+    position: fixed;
+    z-index: 2;
+}
