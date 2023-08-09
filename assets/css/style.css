@@ -160,9 +160,12 @@ section article button {
 
 .card-body {
   background-color: #1a1a1a;
-  color: rgb(255, 255, 255);
+  color: #f9c433;
   font-family: Roboto mono;
   color: rgb(255, 255, 255);
+}
+.card-body .card-title {
+  color: #f9c433;
 }
 
 /*# sourceMappingURL=style.css.map */

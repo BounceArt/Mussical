@@ -24,5 +24,8 @@ $margen1: 24px;
 }
 
 .card-body{
-    @include cardbody(rgb(255, 255, 255), Roboto mono, #f9c433, #1a1a1a);
+    @include cardbody(#f9c433, Roboto mono, rgb(255, 255, 255), #1a1a1a);
+    .card-title{
+        color: $color-a;
+    }
 }
