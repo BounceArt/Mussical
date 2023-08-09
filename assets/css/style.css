@@ -137,20 +137,6 @@ section article button {
   max-width: 400px;
 }
 
-.card-body {
-  background-color: #1a1a1a;
-}
-.card-body h5 {
-  color: #f9c433;
-  font-family: Roboto mono;
-}
-.card-body p {
-  color: rgb(255, 255, 255);
-}
-.card-body a {
-  font-family: Roboto mono;
-}
-
 .container {
   padding-top: 80px;
 }
@@ -170,6 +156,13 @@ section article button {
   flex: 1 0 18rem;
   margin: 0.5rem;
   min-height: 10rem;
+}
+
+.card-body {
+  background-color: #1a1a1a;
+  color: rgb(255, 255, 255);
+  font-family: Roboto mono;
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */

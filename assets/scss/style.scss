@@ -1,7 +1,10 @@
 //variables
 $color-a: #f9c433;
+$color-b: #1a1a1a;
+$color-c: rgb(255, 255, 255);
 $font-1: Akira;
 $font-2: Roboto mono;
+$margen1: 24px;
 //imports
 @import "fonts_html_body";
 @import "navbar";
@@ -11,3 +14,15 @@ $font-2: Roboto mono;
 @import "contacto";
 @import "instrumentos";
 @import "vinilos";
+
+// mixin general
+@mixin cardbody($color-a, $font-2, $color-b, $color-c) {
+        background-color: #1a1a1a;
+        color: $color-a;
+        font-family: $font-2;
+        color: rgb(255, 255, 255);
+}
+
+.card-body{
+    @include cardbody(rgb(255, 255, 255), Roboto mono, #f9c433, #1a1a1a);
+}
