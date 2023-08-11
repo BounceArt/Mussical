@@ -93,8 +93,19 @@ footer a {
   text-decoration: none;
   font-size: 17px;
 }
+footer ul {
+  list-style: none;
+  padding: 0;
+}
 footer li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
   color: white;
+  font-family: Roboto mono !important;
+}
+footer i {
+  margin-right: 10px;
 }
 footer p {
   font-size: 17px;
