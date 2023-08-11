@@ -89,6 +89,9 @@ p {
 footer h5 {
   font-family: Akira;
 }
+footer hr {
+  border-color: #f9c433;
+}
 footer a {
   text-decoration: none;
   font-size: 17px;
