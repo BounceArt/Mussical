@@ -145,6 +145,15 @@ footer i {
   color: #0b5fcc !important;
 }
 
+.icon-twitter {
+  color: #1DA1F2;
+  transition: color 0.3s;
+}
+
+.icon-twitter:hover {
+  color: #0c85d0 !important;
+}
+
 section article {
   font-family: Akira;
   color: #f9c433;
