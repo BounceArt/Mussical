@@ -13,10 +13,22 @@ footer{
                     font-size: 17px;
                     font-family: $font-2;
                 }
-                    a:hover{
-                        color: $color-a !important;
-                    }
                         i{
                             font-size: 25px;
                         }
 }
+$redes: (
+  youtube: #FF0000,
+  instagram: #E4405F,
+  facebook: #1877F2
+);
+@each $red, $color in $redes {
+    .icon-#{$red} {
+      color: $color;
+      transition: color 0.3s; 
+    }
+    
+    .icon-#{$red}:hover {
+      color: darken($color, 10%) !important; 
+    }
+  }
