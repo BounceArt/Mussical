@@ -29,7 +29,7 @@ body {
   width: 100%;
   text-align: center;
   align-items: center;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 100;
 }
@@ -59,13 +59,18 @@ body {
   border-top: 1px solid #f9c433;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 10px;
+  transform: translateY(-50%);
+}
 .logo img {
-  width: 70px;
-  height: 53px;
-  margin-right: 95%;
-  margin-bottom: 1%;
-  position: fixed;
-  z-index: 2;
+  max-height: 53px;
+  margin-left: auto;
+  position: relative;
 }
 
 h1 {
