@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
-
+/*navbar*/
 #caja1 {
   font-family: Akira;
   width: 100%;
@@ -55,7 +55,7 @@ body {
 #caja1 a:hover {
   cursor: pointer;
 }
-
+/*img navbar*/
 .logo img {
   width: 70px;
   height: 53px;
@@ -64,7 +64,7 @@ body {
   position: fixed;
   z-index: 2;
 }
-
+/*títulos*/
 h1 {
   font-family: Akira;
   font-size: 120%;
@@ -79,13 +79,13 @@ h2 {
   text-align: center;
   padding-top: 7%;
 }
-
+/*párrafos*/
 p {
   color: white;
   font-family: Roboto mono;
   padding-left: 1%;
 }
-
+/*footer*/
 footer h5 {
   font-family: Akira;
 }
@@ -117,7 +117,7 @@ footer p {
 footer i {
   font-size: 25px;
 }
-
+/*footer icons*/
 .icon-youtube {
   color: #FF0000;
   transition: color 0.3s;
@@ -153,7 +153,7 @@ footer i {
 .icon-twitter:hover {
   color: #0c85d0 !important;
 }
-
+/*index form*/
 section article {
   font-family: Akira;
   color: #f9c433;
@@ -165,7 +165,7 @@ section article button {
   height: 30px;
   margin-top: 4%;
 }
-
+/*contacto form*/
 .form {
   font-family: Akira;
   color: Roboto mono;
@@ -173,7 +173,7 @@ section article button {
   max-width: 400px;
   margin-top: 30px;
 }
-
+/*instrumentos,vinilos,amplificadores*/
 .container {
   padding-top: 80px;
 }
