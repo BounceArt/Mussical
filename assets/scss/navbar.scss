@@ -10,24 +10,24 @@
     top: 0;
     left: 0;
     z-index: 1;   
-    ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: inline-block;
-    }  
-    li{
-        display: inline-block;
-        padding: 11px;
-    }
-    a{
-        color: $color-a;
-        padding: 1px;
-        text-decoration: none;
-    }
-    a:hover{
-        cursor: pointer;
-    }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+            }  
+            li{
+                display: inline-block;
+                padding: 11px;
+            }
+                a{
+                    color: $color-a;
+                    padding: 1px;
+                    text-decoration: none;
+                    }
+                    a:hover{
+                        cursor: pointer;
+                    }
 }
 .logo img{
     width: 70px;
