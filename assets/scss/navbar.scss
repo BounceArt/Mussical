@@ -5,13 +5,13 @@
     align-items: center;
     position: relative;
     top: 0;
-    z-index: 100;   
+    z-index: 100;
         ul{
             margin: 0;
             padding: 0;
             list-style: none;
             display: inline-block;
-            }  
+            }
             li{
                 display: inline-block;
                 padding: 11px;
@@ -39,11 +39,10 @@
     top: 5%; 
     left: 10px;
     transform: translateY(-50%);
-    
 
     img {
       max-height: 53px;
       margin-left: auto;
-      position: relative;  
+      position: relative;
     }
 }
