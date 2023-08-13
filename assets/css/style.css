@@ -24,53 +24,11 @@ body {
   min-height: 100%;
 }
 
-#caja1 {
+.navbar-nav {
   font-family: Akira;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  position: relative;
-  top: 0;
-  z-index: 100;
 }
-#caja1 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block;
-}
-#caja1 li {
-  display: inline-block;
-  padding: 11px;
-}
-#caja1 a {
-  color: #f9c433;
-  padding: 1px;
-  text-decoration: none;
-}
-#caja1 a:hover {
-  cursor: pointer;
-}
-#caja1 hr {
-  color: #f9c433;
-  margin: 0 auto;
-  width: 50%;
-  border: none;
-  border-top: 1px solid #f9c433;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 5%;
-  left: 10px;
-  transform: translateY(-50%);
-}
-.logo img {
-  max-height: 53px;
-  margin-left: auto;
-  position: relative;
+.navbar-nav a {
+  color: #f9c433 !important;
 }
 
 h1 {

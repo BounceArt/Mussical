@@ -1,48 +1,6 @@
-#caja1 {
+.navbar-nav{
     font-family: $font-1;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    top: 0;
-    z-index: 100;
-        ul{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: inline-block;
-            }
-            li{
-                display: inline-block;
-                padding: 11px;
-            }
-                a{
-                    color: $color-a;
-                    padding: 1px;
-                    text-decoration: none;
-                    }
-                    a:hover{
-                        cursor: pointer;
-                    }
-                        hr{
-                            color: $color-a;
-                            margin: 0 auto;
-                            width: 50%;
-                            border: none;
-                            border-top: 1px solid $color-a;
-                        }
-}
-.logo {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 5%; 
-    left: 10px;
-    transform: translateY(-50%);
-
-    img {
-      max-height: 53px;
-      margin-left: auto;
-      position: relative;
-    }
+        a{
+            color: $color-a !important;
+        }
 }
