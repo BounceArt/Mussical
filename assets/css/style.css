@@ -127,6 +127,14 @@ footer i {
   line-height: 1;
 }
 
+@media (max-width: 762px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+  }
+}
 section article {
   font-family: Akira;
   color: #f9c433;
@@ -157,6 +165,15 @@ section article button {
   max-height: 14rem;
 }
 
+@media (max-width: 762px) {
+  .card-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px;
+    margin-right: 10px;
+  }
+}
 @media (min-width: 992px) {
   .row {
     margin-left: 50px;
