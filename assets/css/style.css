@@ -123,6 +123,10 @@ footer i {
   color: #0c85d0 !important;
 }
 
+.interlineado {
+  line-height: 1;
+}
+
 section article {
   font-family: Akira;
   color: #f9c433;
