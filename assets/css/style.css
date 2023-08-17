@@ -55,6 +55,10 @@ p span {
   color: #f9c433;
 }
 
+.navbar-toggler {
+  color: #f9c433 !important;
+}
+
 footer h5 {
   font-family: Akira;
 }
