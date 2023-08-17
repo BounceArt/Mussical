@@ -31,6 +31,14 @@ body {
   color: #f9c433 !important;
 }
 
+.navbar-toggler {
+  color: #f9c433;
+}
+
+.navbar-expand-lg .navbar-toggler {
+  border: 2px solid #f9c433 !important;
+}
+
 h1 {
   font-family: Akira;
   font-size: 120%;
@@ -53,10 +61,6 @@ p {
 }
 p span {
   color: #f9c433;
-}
-
-.navbar-toggler {
-  color: #f9c433 !important;
 }
 
 footer h5 {
