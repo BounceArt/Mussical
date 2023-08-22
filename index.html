@@ -9,6 +9,7 @@
     <title>Mussical</title>
     <script src="./assets/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -45,7 +46,7 @@
     <body>    
         <main>
 
-            <section class=" animate__animated animate__fadeInDown">
+            <section data-aos="zoom-in">
                 <h2>Sobre nosotros</h2>
                 <p>
                     <span>Somos Mussical</span>, una apasionada tienda dedicada a <span>satisfacer</span> todas tus necesidades musicales. Si eres un entusiasta de la música, un músico apasionado o simplemente un amante de los vinilos, <span>estás en el lugar adecuado</span>. Permítenos guiarte a través de nuestro catálogo de <span>instrumentos</span>, <span>amplificadores</span> y una fantástica selección de <span>vinilos</span> que seguramente despertarán tu interés.
@@ -60,7 +61,7 @@
             </section>
         </main>
        <!--Footer--> 
-        <footer class="text-dark pt-5 pb-4 bg-dark.bg-gradient animate__animated animate__fadeIn">
+        <footer class="text-dark pt-5 pb-4 bg-dark.bg-gradient" data-aos="zoom-in">
             <div class="container text-center text-md-start">
                 <div class="row text-center text-md-start me-5">
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -133,5 +134,9 @@
                 </div>  
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>

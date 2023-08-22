@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../assets/js/bootstrap.js"></script>
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -32,8 +33,7 @@
         </div>
       </nav>
 </header>
-    <br>
-    <br>
+<body>
  <!--Formulario-->
     <section class="form animate__animated animate__zoomIn">
         <h1>Ponte en contacto con nosotros</h1>
@@ -52,7 +52,7 @@
         </article>
     </section>
     <!--Footer-->
-    <footer class="text-dark pt-5 pb-4 bg-dark.bg-gradient animate__animated animate__fadeIn">
+    <footer class="text-dark pt-5 pb-4 bg-dark.bg-gradient" data-aos="zoom-in">
         <div class="container text-center text-md-start">
             <div class="row text-center text-md-start me-5">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -127,3 +127,8 @@
             </div>  
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+</body>    

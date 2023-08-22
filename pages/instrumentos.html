@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../assets/js/bootstrap.js"></script>
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -34,10 +35,11 @@
   </nav>
 </header>
 <!--Contenido-->
+<body>
 <div class="container">
   <div class="row">
     <div class="card-mobile col-12 col-md-4 col-lg-4 mb-3 mb-5">
-      <div class="card animate__animated animate__backInLeft" style="width: 14rem;">
+      <div class="card" data-aos="fade-right" style="width: 14rem;">
         <img src="../assets/img/guitarra1.jpg" class="card-img-top-ins" alt="instrumento-guitarra">
         <div class="card-body">
           <h5 class="card-title">Newen Newen rock Rock</h5>
@@ -48,7 +50,7 @@
     </div>
 
     <div class="card-mobile col-12 col-md-4 col-lg-4">
-      <div class="card animate__animated animate__backInDown" style="width: 14rem;">
+      <div class="card" data-aos="fade-down" style="width: 14rem;">
         <img src="../assets/img/guitarra2.jpg" class="card-img-top-ins" alt="instrumento-guitarra">
         <div class="card-body" style="height: 240px;">
           <h5 class="card-title">Cort X Series X100</h5>
@@ -59,7 +61,7 @@
     </div>
 
     <div class=" card-mobile col-12 col-md-4 col-lg-4">
-      <div class="card animate__animated animate__backInRight" style="width: 14rem;">
+      <div class="card" data-aos="fade-left" style="width: 14rem;">
         <img src="../assets/img/guitarra3.jpg" class="card-img-top-ins" alt="instrumento-guitarra">
         <div class="card-body" style="height: 240px;">
           <h5 class="card-title">Ibanez SA GIO GSA60</h5>
@@ -71,7 +73,7 @@
   </div>
   <div class="row mb-5 ">
     <div class="card-mobile col-12 col-md-4 col-lg-4 mt-lg-5 mb-lg-5">
-      <div class="card animate__animated animate__backInLeft" style="width: 14rem;">
+      <div class="card" data-aos="fade-right" style="width: 14rem;">
         <img src="../assets/img/ibanez2.jpg" class="card-img-top-ins" alt="instrumento-guitarra">
         <div class="card-body">
           <h5 class="card-title">AS Artcore AS53 semi hollow</h5>
@@ -82,7 +84,7 @@
     </div>
 
     <div class="card-mobile col-12 col-md-4 col-lg-4 mt-lg-5">
-      <div class="card animate__animated animate__backInUp" style="width: 14rem;">
+      <div class="card" data-aos="fade-up" style="width: 14rem;">
         <img src="../assets/img/guitarra5.jpg" class="card-img-top-ins" alt="instrumento-guitarra">
         <div class="card-body">
           <h5 class="card-title">Cort CR Series CR200</h5>
@@ -93,7 +95,7 @@
     </div>
 
     <div class="card-mobile col-12 col-md-4 col-lg-4 mt-lg-5">
-      <div class="card animate__animated animate__backInRight" style="width: 14rem;">
+      <div class="card"  data-aos="fade-left"style="width: 14rem;">
         <img src="../assets/img/guitarra4.jpg" class="card-img-top-ins" alt="instrumento-guitarra">
         <div class="card-body">
           <h5 class="card-title">LTD MH Series MH-10</h5>
@@ -107,7 +109,7 @@
 </div>
 
    <!--Footer--> 
-   <footer class="text-dark pt-5 pb-4 bg-dark.bg-gradient animate__animated animate__fadeIn">
+   <footer class="text-dark pt-5 pb-4 bg-dark.bg-gradient" data-aos="zoom-in">
     <div class="container text-center text-md-start">
         <div class="row text-center text-md-start me-5">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -182,3 +184,8 @@
         </div>  
     </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+</body>
