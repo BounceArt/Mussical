@@ -1,17 +1,3 @@
-function carritoDeProductos(tipoProducto, productos) {
-    let productList = productos.map((producto, index) => `${index + 1}. ${producto}`).join("\n");
-    alert("Usted ha seleccionado " + tipoProducto + ":\n" + productList);
-
-    let seleccion = parseInt(prompt(`Por favor, seleccione el número del producto que desea agregar al carrito (1-${productos.length}):`));
-
-    if (!isNaN(seleccion) && seleccion >= 1 && seleccion <= productos.length) {
-        // Agregar el producto al carrito
-        carrito.push(productos[seleccion - 1]);
-        alert(`Producto agregado al carrito: ${productos[seleccion - 1]}`);
-    } else {
-        alert("Selección no válida. Por favor, seleccione un número válido.");
-    }
-}
 // arrays
   
  let carrito = []
@@ -27,6 +13,8 @@ const productos = [
 ]
 
 let comprar = prompt("Desea comprar un producto? (SI - NO)").toUpperCase()
+
+// Utilización de ciclos while y condicionales if 
 
 while (comprar !== "SI" && comprar !== "NO") {
     alert("Por favor, ingrese SI o NO");
@@ -73,8 +61,8 @@ while(comprar !== "NO"){
         alert("No selecciono escribió ninguno de los productos mencionados.")
     }
 
-    seleccion = prompt("Desea seguir comprando? (si - no").toUpperCase()
-    
+    seleccion = prompt("Desea seguir comprando? (SI - NO)").toUpperCase()
+ // Mediante el ciclo while se verifica si el usuario quiere o no seguir comprando, si la respuesta es no se le mostrara su carrito final mediante consola.   
     while(seleccion === "NO"){
         alert("Gracias por su compra! Esperamos verlo de nuevo.")
         carrito.forEach((carritoFinal) => {
