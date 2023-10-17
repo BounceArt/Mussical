@@ -1,9 +1,7 @@
 // arrays
-  
  let carrito = []
 
 // objeto
-
 const productos = [
     {nombre: "Cort CR Series CR200", precio: 1520},
     {nombre: "Amplificador Orange Crush 35RT", precio: 725.79},
@@ -11,15 +9,20 @@ const productos = [
     {nombre: "Nevermind By Nirvana LP", precio: 15},
     {nombre: "LTD MH Series MH-10", precio: 955}
 ]
+// desestructurando un array con objetos
+productos.forEach(({ nombre, precio }) => {
+    console.log("Nombre:", nombre);
+    console.log("Precio:", precio);
+})
 
 let comprar = prompt("Desea comprar un producto? (SI - NO)").toUpperCase()
 
 // Utilización de ciclos while y condicionales if 
 
-while (comprar !== "SI" && comprar !== "NO") {
-    alert("Por favor, ingrese SI o NO");
-    comprar = prompt("¿Desea comprar un producto? (SI - NO)").toUpperCase();
-}
+// Utilizacion de operador ternario en bucle while
+while (comprar !== "SI" && comprar !== "NO" ? (alert("Por favor, ingrese SI o NO"), true) : false) {
+    comprar = prompt("¿Desea comprar un producto? (SI - NO)").toUpperCase()}
+
 if(comprar === "SI"){
     alert("Bienvenido a Mussical, a continuación le mostraremos nuestro catálogo.")
     let todoLosProductos = productos.map((producto) => producto.nombre.concat(" " + producto.precio) + "$")
@@ -62,6 +65,7 @@ while(comprar !== "NO"){
     }
 
     seleccion = prompt("Desea seguir comprando? (SI - NO)").toUpperCase()
+
  // Mediante el ciclo while se verifica si el usuario quiere o no seguir comprando, si la respuesta es no se le mostrara su carrito final mediante consola.   
     while(seleccion === "NO"){
         alert("Gracias por su compra! Esperamos verlo de nuevo.")
@@ -72,3 +76,28 @@ while(comprar !== "NO"){
     }
 
 }
+
+// DOM 
+
+let emailInput = document.getElementById("email")
+let button = document.querySelector(".btn-warning")
+
+button.addEventListener("click", registrarValor)
+
+function registrarValor() {
+  let emailValue = emailInput.value
+  console.log("Un nuevo usuario se ha suscrito al NewsLatter con el email: " + emailValue)
+  localStorage.setItem("emailNewslatter", emailValue)
+}
+
+// Almacenamiento de productos con localstorage y JSON
+
+const productosJSON = JSON.stringify(productos)
+
+localStorage.setItem("productos", productosJSON)
+
+const productosRecuperadosJSON = localStorage.getItem('productos');
+
+const productosRecuperados = JSON.parse(productosRecuperadosJSON);
+
+console.log(productosRecuperados)
