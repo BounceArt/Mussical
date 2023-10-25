@@ -1,5 +1,5 @@
 <head>
-    <title>Contacto</title>
+    <title>Carrito</title>
     <meta name="description" content="Ponte en contacto con nosotros. Estamos para lo que necesites">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../assets/js/bootstrap.js"></script>
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/img/MUSSICAL_FAV.jpg" type="image/x-icon">
 </head>
-<!--Encabezado-->
 <header>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid animate__animated animate__bounceInLeft">
@@ -36,23 +35,13 @@
       </nav>
 </header>
 <body>
- <!--Formulario-->
-    <section class="form animate__animated animate__zoomIn">
-        <h1>Ponte en contacto con nosotros</h1>
-        <article>
-            <form action="" method="get" class="form"></form>
-            <label for="Nombre">Nombre</label>
-            <input type="text" name="Nombre" id="Nombre">
-            <br>
-            <label for="Apellido">Apellido</label>
-            <input type="text" name="Apellido" id="Apellido">
-            <br>
-            <label for="Email">Email</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <button type="button" class="btn btn-warning">Enviar</button>
-        </article>
-    </section>
+    <main>
+        <p id="mensaje-bienvenida"></p>
+        <p id="mensaje-despedida"></p>
+        <p id="mensaje-error"></p>
+        <p id="carrito"></p>
+        <p></p>
+    </main>
     <!--Footer-->
     <footer class="text-dark pt-5 pb-4 bg-dark.bg-gradient" data-aos="zoom-in">
         <div class="container text-center text-md-start">
@@ -129,8 +118,10 @@
             </div>  
         </div>
     </footer>
+    <script src="../assets/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
           </script>
 </body>    
+</body>

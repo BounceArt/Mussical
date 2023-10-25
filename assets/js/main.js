@@ -9,14 +9,7 @@ const productos = [
     {nombre: "Nevermind By Nirvana LP", precio: 15},
     {nombre: "LTD MH Series MH-10", precio: 955}
 ]
-// desestructurando un array con objetos
-productos.forEach(({ nombre, precio }) => {
-    console.log("Nombre:", nombre);
-    console.log("Precio:", precio);
-})
-
-let comprar = prompt("Desea comprar un producto? (SI - NO)").toUpperCase()
-
+let comprar = prompt("Desea comprar un producto, Ingrese SI o NO").toUpperCase()
 // Utilización de ciclos while y condicionales if 
 
 // Utilizacion de operador ternario en bucle while
@@ -24,13 +17,15 @@ while (comprar !== "SI" && comprar !== "NO" ? (alert("Por favor, ingrese SI o NO
     comprar = prompt("¿Desea comprar un producto? (SI - NO)").toUpperCase()}
 
 if(comprar === "SI"){
-    alert("Bienvenido a Mussical, a continuación le mostraremos nuestro catálogo.")
+    const mensajeBienvenida = document.getElementById("mensaje-bienvenida")
+    mensajeBienvenida.textContent = "Bienvenido a Mussical."
     let todoLosProductos = productos.map((producto) => producto.nombre.concat(" " + producto.precio) + "$")
     alert(todoLosProductos.join(" - "))
 }else if(comprar == "NO"){
-    alert("Gracias por su visita a Mussical. Hasta pronto!")
+    const mensajeDespedida = document.getElementById("mensaje-despedida")
+    mensajeDespedida.textContent = "Gracias por su visita a Mussical. Hasta pronto!"
 }
-
+const carritoElement = document.getElementById("carrito")
 while(comprar !== "NO"){
     let producto = prompt("Agrega un producto en tu carrito.")
     let precio = 0
@@ -58,36 +53,27 @@ while(comprar !== "NO"){
         }
         let unidades = parseInt(prompt("Cuantas unidades quieres llevar?"))
 
+        
         carrito.push({producto, unidades, precio})
-        console.log(carrito)
+        carritoElement.innerHTML = ""
     }else{
-        alert("No selecciono escribió ninguno de los productos mencionados.")
+        const mensajeError = document.getElementById("mensaje-error")
+    mensajeError.textContent = "No selecciono ninguno de los productos mencionados"
+    break
     }
 
     seleccion = prompt("Desea seguir comprando? (SI - NO)").toUpperCase()
 
  // Mediante el ciclo while se verifica si el usuario quiere o no seguir comprando, si la respuesta es no se le mostrara su carrito final mediante consola.   
     while(seleccion === "NO"){
-        alert("Gracias por su compra! Esperamos verlo de nuevo.")
         carrito.forEach((carritoFinal) => {
-            console.log(`Producto: ${carritoFinal.producto}, Unidades: ${carritoFinal.unidades}, Total a pagar: ${carritoFinal.unidades * carritoFinal.precio} `)
-        })
+            const carritoItem = document.createElement("p")
+            carritoItem.textContent = `Producto: ${carritoFinal.producto}, Unidades: ${carritoFinal.unidades}, Total a pagar: ${carritoFinal.unidades * carritoFinal.precio}`
+            carritoElement.appendChild(carritoItem)
+          })
         break
     }
 
-}
-
-// DOM 
-
-let emailInput = document.getElementById("email")
-let button = document.querySelector(".btn-warning")
-
-button.addEventListener("click", registrarValor)
-
-function registrarValor() {
-  let emailValue = emailInput.value
-  console.log("Un nuevo usuario se ha suscrito al NewsLatter con el email: " + emailValue)
-  localStorage.setItem("emailNewslatter", emailValue)
 }
 
 // Almacenamiento de productos con localstorage y JSON
