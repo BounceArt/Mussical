@@ -67,6 +67,13 @@ p span {
   color: #f9c433;
 }
 
+#email-enviado {
+  color: #f9c433;
+  font-family: Akira;
+  text-align: center;
+  margin-top: 10px;
+}
+
 footer h5 {
   font-family: Akira;
 }
@@ -201,6 +208,18 @@ section article button {
   width: 100%;
   height: 600px;
   max-height: 14rem;
+}
+
+.producto-1 {
+  color: #f9c433;
+}
+
+.unidades-1 {
+  color: #f9c433;
+}
+
+#fin-compra {
+  margin-left: 600px;
 }
 
 .card-body {

@@ -38,9 +38,29 @@
     <main>
         <p id="mensaje-bienvenida"></p>
         <p id="mensaje-despedida"></p>
-        <p id="mensaje-error"></p>
+        
         <p id="carrito"></p>
-        <p></p>
+        <form id="carrito-form">
+            <label for="producto" class="producto-1">Producto:</label>
+            <select id="producto">
+                <option value="Cort CR Series CR200">Cort CR Series CR200</option>
+                <option value="Amplificador Orange Crush 35RT">Amplificador Orange Crush 35RT</option>
+                <option value="Antenna By Cave In LP">Antenna By Cave In LP</option>
+                <option value="Nevermind By Nirvana LP">Nevermind By Nirvana LP</option>
+                <option value="LTD MH Series MH-10">LTD MH Series MH-10</option>
+            </select>
+            <label for="unidades" class="unidades-1">Unidades:</label>
+            <input type="number" id="unidades">
+            <button type="button" class="btn btn-warning" id="agregar-al-carrito">Agregar al carrito</button>
+        </form>
+        <p id="mensaje-error-2"></p>
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito-lista"></ul>
+        </div>
+        
+        <button type="button" class="btn btn-warning" id="fin-compra">Finalizar compra</button>
+        <p id="mensaje-error"></p>
     </main>
     <!--Footer-->
     <footer class="text-dark pt-5 pb-4 bg-dark.bg-gradient" data-aos="zoom-in">
@@ -67,6 +87,7 @@
                         <a href="vinilos.html" class="text-warning">Vinilos</a>
                     </p>
                 </div>
+
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
