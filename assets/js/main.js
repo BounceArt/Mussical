@@ -21,7 +21,7 @@
     agregarAlCarritoButton.addEventListener("click", () => {
         const producto = productoSelect.value;
         const unidades = parseInt(unidadesInput.value);
-    
+        sessionStorage.setItem("carrito", JSON.stringify(carrito))
         if (unidades <= 0 || isNaN(unidades)) {
             mensajeError2.textContent = "Debe ingresar una cantidad válida de unidades.";
         } else if (
@@ -92,8 +92,5 @@
         }
     });
     
-
-
-// Almacenamiento de productos con localstorage y JSON
 
 
