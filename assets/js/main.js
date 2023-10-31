@@ -21,16 +21,21 @@
     agregarAlCarritoButton.addEventListener("click", () => {
         const producto = productoSelect.value;
         const unidades = parseInt(unidadesInput.value);
-        sessionStorage.setItem("carrito", JSON.stringify(carrito))
-        if (unidades <= 0 || isNaN(unidades)) {
-            mensajeError2.textContent = "Debe ingresar una cantidad válida de unidades.";
-        } else if (
-            producto === "Cort CR Series CR200" ||
+    
+        const mensajeUnidades = (unidades <= 0 || isNaN(unidades)) ? "Debe ingresar una cantidad válida de unidades." : ""
+        const mensajeProducto = (
+            (producto === "Cort CR Series CR200" ||
             producto === "Amplificador Orange Crush 35RT" ||
             producto === "Antenna By Cave In LP" ||
             producto === "Nevermind By Nirvana LP" ||
-            producto === "LTD MH Series MH-10"
-        ) {
+            producto === "LTD MH Series MH-10")
+        )
+            ? "" 
+            : "No seleccionó un producto válido. Por favor, elija un producto de la lista."
+    
+        if (mensajeUnidades || mensajeProducto) {
+            mensajeError2.textContent = mensajeUnidades || mensajeProducto;
+        } else {
             let precio = 0;
     
             switch (producto) {
@@ -59,10 +64,10 @@
             unidadesInput.value = "";
     
             mostrarCarrito();
-        } else {
-            
         }
     });
+    
+    
     
 
     function mostrarCarrito() {
