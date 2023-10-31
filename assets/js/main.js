@@ -68,8 +68,6 @@
     });
     
     
-    
-
     function mostrarCarrito() {
         carritoLista.innerHTML = ""
         carrito.forEach((item) => {
@@ -96,6 +94,3 @@
             finalizarCompra.parentNode.appendChild(finDeCompra);
         }
     });
-    
-
-
