@@ -78,19 +78,21 @@
             }$`;
             carritoLista.appendChild(carritoItem)
         });
-        const precioTotalElement = document.createElement("p");
-        precioTotalElement.textContent = `Precio total: $${precioTotal}`;
+        const precioTotalElement = document.createElement("p")
+        precioTotalElement.textContent = `Precio total: $${precioTotal}`
         carritoLista.appendChild(precioTotalElement)
         
         
-    }   let finalizarCompra = document.getElementById("fin-compra");
+    }   let finalizarCompra = document.getElementById("fin-compra")
     finalizarCompra.addEventListener("click", function () {
         if (carrito.length === 0) {  
-            const mensajeError = document.getElementById("mensaje-error");
-            mensajeError.textContent = "No has agregado ningún producto al carrito. Agrega productos antes de finalizar la compra.";
+            const mensajeError = document.getElementById("mensaje-error")
+            mensajeError.textContent = "No has agregado ningún producto al carrito. Agrega productos antes de finalizar la compra."
         } else {
             let finDeCompra = document.createElement("p");
-            finDeCompra.textContent = "Gracias por comprar en nuestra tienda!";
-            finalizarCompra.parentNode.appendChild(finDeCompra);
+            finDeCompra.textContent = "Gracias por comprar en nuestra tienda!"
+            finalizarCompra.parentNode.appendChild(finDeCompra)
         }
-    });
+    })
+
+    
