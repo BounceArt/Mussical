@@ -56,6 +56,7 @@ setTimeout(()=> {
     position: "right",
     gravity: "bottom",
     style:{
+      borderRadius: "2rem",
       background: "linear-gradient(to left, #f9c433 , rgb(19, 19, 19))"
     }
     }).showToast()
