@@ -1,214 +1,262 @@
+let productos = [
+    {
+        id: "cort1",
+        titulo: "Guitarra Cort CR Series CR200",
+        imagen: "../assets/img/guitarra5.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 556.99
+    },
+    {
+        id: "newen",
+        titulo: "Guitarra Newen Newen rock Rock",
+        imagen: "../assets/img/guitarra1.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 1499.00
 
-    let carrito = []
-    let todoLosProductos = []
-    let precioTotal = 0
-    const productos = [
-        { nombre: "Guitarra Cort CR Series CR200", precio: 1520 },
-        { nombre: "Amplificador Orange Crush 35RT", precio: 725.79 },
-        { nombre: "Antenna By Cave In LP", precio: 10 },
-        { nombre: "Nevermind By Nirvana LP", precio: 15 },
-        { nombre: "LTD MH Series MH-10", precio: 955 },
-        { nombre: "Guitarra Newen Newen rock Rock", precio: 1499.00},
-        { nombre: "Guitarra Cort X Series X100", precio: 899},
-        { nombre: "Guitarra Ibanez SA GIO GSA60", precio: 678.29},
-        { nombre: "Guitarra AS Artcore AS53 semi hollow", precio: 975.69},
-        { nombre: "White Pony By Deftones LP", precio: 30},
-        { nombre: "The Gray In Between By Jeromes Dream LP", precio: 20},
-        { nombre: "Follow The Leader By Korn", precio: 10},
-        { nombre: "Nevermind By Nirvana LP", precio: 15},
-        { nombre: "Book Burner By Pig Destroyer LP", precio: 5},
-        { nombre: "Slipknot By Slipknot LP", precio: 12},
-        { nombre: "System Of A Down By System Of A Down LP", precio: 23},
-        { nombre: "Lateralus By Tool LP", precio: 35},
-        { nombre: "Glow On By Turnstile LP", precio: 25},
-        { nombre: "Mellon Collie & The Infinite Sadness By The Smashing Pumpkings", precio: 92},
-        { nombre: "Mukiltearth By The Fall of Troy", precio: 40},
-        { nombre: "Amplificador Champion™ 50XL", precio: 309.99},
-        { nombre: "Amplificador Tone Master® Super Reverb®", precio: 1599.00},
-        { nombre: "Amplificador Tone Master® Twin Reverb®", precio: 1389.00},
-        { nombre: "Amplificador Boss Katana 50 MkII", precio: 1055.52},
-        { nombre: "Amplificador Roland Acs Live Lt Acoustic Singer Live", precio: 1406.15},
-        { nombre: "Amplificador Marshall MG Carbon Fibre MG50CFX Transistor", precio: 809.89},
-        { nombre: "Amplificador Marshall Mb15 (bass)", precio: 664.19},
-        { nombre: "Amplificador Marshall Mb30 (bass)", precio: 683.93},
-        { nombre: "Amplificador Orange Crush Pix CR50BXT Transistor", precio: 929.21},
-        { nombre: "Amplificador Peavey Rage 258 Woofer 8 Eq 3", precio: 457.47},
-        { nombre: "Amplificador Fender Evh 5150 212st", precio: 3657.04},
-    ];
 
-    const carritoElement = document.getElementById("carrito")
-    const mensajeError2 = document.getElementById("mensaje-error-2")
-    const carritoForm = document.getElementById("carrito-form")
-    const productoSelect = document.getElementById("producto")
-    const unidadesInput = document.getElementById("unidades")
-    const agregarAlCarritoButton = document.getElementById("agregar-al-carrito")
-    const carritoLista = document.getElementById("carrito-lista")
+    },
+    {
+        id: "cort2",
+        titulo: "Guitarra Cort X Series X100",
+        imagen: "../assets/img/guitarra2.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 899.00
+    },
+    {
+        id: "ibanez",
+        titulo: "Guitarra Ibanez SA GIO GSA60",
+        imagen: "../assets/img/guitarra3.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 678.29
+    },
+    {
+        id: "ltd",
+        titulo: "Guitarra LTD MH Series MH-10",
+        imagen: "../assets/img/guitarra4.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 940.99
+    },
+    {
+        id: "artcore",
+        titulo: "Guitarra AS Artcore AS53 semi hollow",
+        imagen: "../assets/img/ibanez2.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 975.69
+    },
+    {
+        id: "cave-lp",
+        titulo: "Antenna By Cave In LP",
+        imagen: "../assets/img/cave.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 9
+    },
+    {
+        id: "nevermind-lp",
+        titulo: "Nevermind By Nirvana LP",
+        imagen: "../assets/img/nirvana.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 15
+    },
+    {
+        id: "whitepony-lp",
+        titulo: "White Pony By Deftones LP",
+        imagen: "../assets/img/deft.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 30
+    },
+    {
+        id: "jeromes-lp",
+        titulo: "The Gray In Between By Jeromes Dream LP",
+        imagen: "../assets/img/Jeromes.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 20
+    },
+    {
+        id: "korn-lp",
+        titulo: "Follow The Leader By Korn",
+        imagen: "../assets/img/korn.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 10
+    },
+    {
+        id: "bookburner-lp",
+        titulo: "Book Burner By Pig Destroyer LP",
+        imagen: "../assets/img/pig.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 5
+    },
+    {
+        id: "slipknot-lp",
+        titulo: "Slipknot By Slipknot LP",
+        imagen: "../assets/img/slipknot.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 12
+    },
+    {
+        id: "system-lp",
+        titulo: "System Of A Down By System Of A Down LP",
+        imagen: "../assets/img/system.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 23
+    },
+    {
+        id: "lateralus-lp",
+        titulo: "Lateralus By Tool LP",
+        imagen: "../assets/img/tool.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 35
+    },
+    {
+        id: "glowon-lp",
+        titulo: "Glow On By Turnstile LP",
+        imagen: "../assets/img/turnstile.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 25
+    },
+    {
+        id: "smashing-lp",
+        titulo: "Mellon Collie & The Infinite Sadness By The Smashing Pumpkings",
+        imagen: "../assets/img/smashing.jpg",
+        categoria: {
+            nombre: "Vinilos",
+            id: "vinilos"
+        },
+        precio: 92
+    },
+]
 
-    agregarAlCarritoButton.addEventListener("click", () => {
-        const producto = productoSelect.value;
-        const unidades = parseInt(unidadesInput.value);
-    
-        const mensajeUnidades = (unidades <= 0 || isNaN(unidades)) ? "Debe ingresar una cantidad válida de unidades." : ""
-        const mensajeProducto = (
-            (producto === "Guitarra Cort CR Series CR200" ||
-            producto === "Amplificador Orange Crush 35RT" ||
-            producto === "Antenna By Cave In LP" ||
-            producto === "Nevermind By Nirvana LP" ||
-            producto === "LTD MH Series MH-10")
-        )
-            ? "" 
-            : "No seleccionó un producto válido. Por favor, elija un producto de la lista."
-    
-        if (mensajeUnidades || mensajeProducto) {
-            mensajeError2.textContent = mensajeUnidades || mensajeProducto;
-        } else {
-            let precio = 0;
-    
-            switch (producto) {
-                case "Guitarra Cort CR Series CR200":
-                    precio = 1520;
-                    break;
-                case "Amplificador Orange Crush 35RT":
-                    precio = 725.79;
-                    break;
-                case "Antenna By Cave In LP":
-                    precio = 10;
-                    break;
-                case "Nevermind By Nirvana LP":
-                    precio = 15;
-                    break;
-                case "LTD MH Series MH-10":
-                    precio = 955;
-                    break;
-                case "Guitarra Newen Newen rock Rock":
-                    precio = 1499.00;
-                    break;
-                case "Guitarra Cort X Series X100":
-                    precio = 899;
-                    break;
-                case "Guitarra Ibanez SA GIO GSA60":
-                    precio = 678.29;
-                    break;
-                case "Guitarra AS Artcore AS53 semi hollow":
-                    precio = 975.69;
-                    break;
-                case "White Pony By Deftones LP":
-                    precio = 30;
-                    break;
-                case "The Gray In Between By Jeromes Dream LP":
-                    precio = 20;
-                    break;
-                case "Follow The Leader By Korn":
-                    precio = 10;
-                    break;
-                case "Book Burner By Pig Destroyer LP":
-                    precio = 5;
-                    break;
-                case "Slipknot By Slipknot LP":
-                    precio = 12;
-                    break;
-                case "System Of A Down By System Of A Down LP":
-                    precio = 23;
-                    break;
-                case "Lateralus By Tool LP":
-                    precio = 35;
-                    break;
-                case "Glow On By Turnstile LP":
-                    precio = 25;
-                    break;
-                case "Mellon Collie & The Infinite Sadness By The Smashing Pumpkings":
-                    precio = 92;
-                    break;
-                case "Mukiltearth By The Fall of Troy":
-                    precio = 40;
-                    break;
-                case "Amplificador Champion™ 50XL":
-                    precio = 309.99;
-                    break;
-                case "Amplificador Tone Master® Super Reverb®":
-                    precio = 1599.00;
-                    break;
-                case "Amplificador Tone Master® Twin Reverb®":
-                    precio = 1389.00;
-                    break;
-                case "Amplificador Boss Katana 50 MkII":
-                    precio = 1055.52;
-                    break;
-                case "Amplificador Roland Acs Live Lt Acoustic Singer Live":
-                    precio = 1406.15;
-                    break;
-                case "Amplificador Marshall MG Carbon Fibre MG50CFX Transistor":
-                    precio = 809.89;
-                    break;
-                case "Amplificador Marshall Mb15 (bass)":
-                    precio = 664.19;
-                    break;
-                case "Amplificador Marshall Mb30 (bass)":
-                    precio = 683.93;
-                    break;
-                case "Amplificador Orange Crush Pix CR50BXT Transistor":
-                    precio = 929.21;
-                    break;
-                case "Amplificador Peavey Rage 258 Woofer 8 Eq 3":
-                    precio = 457.47;
-                    break;
-                case "Amplificador Fender Evh 5150 212st":
-                    precio = 3657.04;
-                    break;
-                default:
-                    break;
-            }
-            
-            carrito.push({ producto, unidades, precio });
-            precioTotal += unidades * precio;
-            carritoElement.innerHTML = "";
-            unidadesInput.value = "";
-    
-            mostrarCarrito();
-        }
+const contenedorProductos = document.querySelector("#contenedor-productos");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+const numerito = document.querySelector("#numerito");
+
+function cargarProductos(productosElegidos) {
+
+    contenedorProductos.innerHTML = "";
+
+    productosElegidos.forEach(producto => {
+
+        const div = document.createElement("div")
+        div.classList.add("producto")
+        div.innerHTML = `
+            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo">${producto.titulo}</h3>
+                <p class="producto-precio">$${producto.precio}</p>
+                <button class="producto-agregar" id="${producto.id}">Agregar</button>
+            </div>
+        `;
+
+        contenedorProductos.append(div);
+    }) 
+}
+
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".producto-agregar");
+
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
     });
-    
-    
-    function mostrarCarrito() {
-        carritoLista.innerHTML = ""
-        carrito.forEach((item) => {
-            const carritoItem = document.createElement("li")
-            carritoItem.style.color = "#f9c433"
-            carritoItem.textContent = `Producto: ${item.producto}, Unidades: ${item.unidades}, Total a pagar: ${
-                item.unidades * item.precio
-            }$`;
-            carritoLista.appendChild(carritoItem)
-        });
-        const precioTotalElement = document.createElement("p")
-        precioTotalElement.textContent = `Precio total: $${precioTotal}`
-        carritoLista.appendChild(precioTotalElement)
-        
-        
-    }   let finalizarCompra = document.getElementById("fin-compra")
-    finalizarCompra.addEventListener("click", function () {
-        if (carrito.length === 0) {  
-            Toastify({
+}
+actualizarBotonesAgregar()
+let productosEnCarrito;
 
-                text: "Agregue productos al carrito.",
-                duration: 3000,
-                position: "right",
-                gravity: "bottom",
-                style:{
-                  background: "linear-gradient(to left, #f9c433 , rgb(19, 19, 19))"
-                }
-                }).showToast()
-        } else {
-            Toastify({
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
-                text: "Gracias por comprar en nuestra tienda!",
-                duration: 3000,
-                position: "right",
-                gravity: "bottom",
-                style:{
-                  background: "linear-gradient(to left, #f9c433 , rgb(19, 19, 19))"
-                }
-                }).showToast()
-        }
-    })
+if (productosEnCarritoLS) {
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarNumerito();
+} else {
+    productosEnCarrito = [];
+}
 
-    
+function agregarAlCarrito(e) {
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        close: true,
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true, 
+        style: {
+          background: "linear-gradient(to right, #4b33a8, #785ce9)",
+          borderRadius: "2rem",
+          textTransform: "uppercase",
+          fontSize: ".75rem"
+        },
+        offset: {
+            x: '1.5rem', 
+            y: '1.5rem' 
+          },
+        onClick: function(){} 
+      }).showToast();
+
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
+        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+        productosEnCarrito[index].cantidad++;
+    } else {
+        // Agrega la propiedad 'cantidad' al producto e inicialízala en 1.
+        productoAgregado.cantidad = 1;
+        productosEnCarrito.push(productoAgregado);
+    }
+
+    actualizarNumerito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+}
+
+
+function actualizarNumerito() {
+    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numerito.innerText = nuevoNumerito;
+}

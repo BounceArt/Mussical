@@ -210,16 +210,109 @@ section article button {
   max-height: 14rem;
 }
 
-.producto-1 {
-  color: #f9c433;
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.unidades-1 {
-  color: #f9c433;
+.carrito-vacio {
+  color: rgb(255, 255, 255);
 }
 
-#fin-compra {
-  margin-left: 600px;
+.carrito-comprado {
+  color: rgb(255, 255, 255);
+}
+
+.carrito-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.carrito-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: #f9c433;
+  padding: 0.5rem;
+  padding-right: 1.5rem;
+  border-radius: 1rem;
+}
+
+.carrito-producto-imagen {
+  width: 4rem;
+  border-radius: 1rem;
+}
+
+.carrito-producto small {
+  font-size: 0.75rem;
+  font-family: Roboto mono;
+}
+
+.carrito-producto-eliminar {
+  border: 0;
+  background-color: transparent;
+  color: rgb(229, 59, 59);
+  cursor: pointer;
+}
+
+.carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrito-acciones-vaciar {
+  font-family: Roboto mono;
+  border: 0;
+  background-color: #f9c433;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  color: var(--clr-main);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.carrito-acciones-derecha {
+  display: flex;
+}
+
+.carrito-acciones-total {
+  display: flex;
+  background-color: linear-gradient(to left, rgb(58, 57, 57), rgb(19, 19, 19));
+  padding: 0.5rem;
+  color: var(--clr-main);
+  text-transform: uppercase;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  gap: 1rem;
+}
+
+.carrito-acciones-comprar {
+  font-family: Roboto mono;
+  border: 0;
+  background-color: #f9c433;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+.disabled {
+  display: none;
 }
 
 .card-body {
