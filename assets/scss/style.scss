@@ -30,3 +30,13 @@ $margen1: 24px;
         color: $color-a;
     }
 }
+.producto-agregar{
+    border: 0;
+    background-color: $color-a;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    color: var($color-b);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 1rem;
+}

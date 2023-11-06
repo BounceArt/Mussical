@@ -79,7 +79,7 @@ function eliminarDelCarrito(e) {
         position: "right", 
         stopOnFocus: true, 
         style: {
-          background: "linear-gradient(to right, #4b33a8, #785ce9)",
+          background: "linear-gradient(to left, #f9c433 , rgb(19, 19, 19))",
           borderRadius: "2rem",
           textTransform: "uppercase",
           fontSize: ".75rem"
@@ -88,7 +88,7 @@ function eliminarDelCarrito(e) {
             x: '1.5rem', 
             y: '1.5rem' 
           },
-        onClick: function(){} // Callback after click
+        onClick: function(){}
       }).showToast()
 
     const idBoton = e.currentTarget.id

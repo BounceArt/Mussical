@@ -239,6 +239,7 @@ section article button {
   padding: 0.5rem;
   padding-right: 1.5rem;
   border-radius: 1rem;
+  border-bottom: 2px solid #f9c433;
 }
 
 .carrito-producto-imagen {
@@ -248,7 +249,7 @@ section article button {
 
 .carrito-producto small {
   font-size: 0.75rem;
-  font-family: Roboto mono;
+  text-transform: uppercase;
 }
 
 .carrito-producto-eliminar {
@@ -264,15 +265,13 @@ section article button {
 }
 
 .carrito-acciones-vaciar {
-  font-family: Roboto mono;
   border: 0;
   background-color: #f9c433;
   padding: 0.5rem;
   margin-left: 1rem;
   border-radius: 0.5rem;
-  color: var(--clr-main);
-  text-transform: uppercase;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .carrito-acciones-derecha {
@@ -281,22 +280,21 @@ section article button {
 
 .carrito-acciones-total {
   display: flex;
-  background-color: linear-gradient(to left, rgb(58, 57, 57), rgb(19, 19, 19));
-  padding: 0.5rem;
-  color: var(--clr-main);
+  border: solid;
   text-transform: uppercase;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  padding: 0.5rem;
+  color: #f9c433;
+  border-color: 2px #f9c433;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   gap: 1rem;
 }
 
 .carrito-acciones-comprar {
-  font-family: Roboto mono;
   border: 0;
   background-color: #f9c433;
   padding: 0.5rem;
   margin-right: 1rem;
-  color: var(--clr-white);
   text-transform: uppercase;
   cursor: pointer;
   border-top-right-radius: 1rem;
@@ -323,6 +321,17 @@ section article button {
 }
 .card-body .card-title {
   color: #f9c433;
+}
+
+.producto-agregar {
+  border: 0;
+  background-color: #f9c433;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  color: var(#1a1a1a);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

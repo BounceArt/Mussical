@@ -3,20 +3,12 @@ let productos = [
         id: "cort1",
         titulo: "Guitarra Cort CR Series CR200",
         imagen: "../assets/img/guitarra5.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
         precio: 556.99
     },
     {
         id: "newen",
         titulo: "Guitarra Newen Newen rock Rock",
         imagen: "../assets/img/guitarra1.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
         precio: 1499.00
 
 
@@ -25,157 +17,180 @@ let productos = [
         id: "cort2",
         titulo: "Guitarra Cort X Series X100",
         imagen: "../assets/img/guitarra2.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
         precio: 899.00
     },
     {
         id: "ibanez",
         titulo: "Guitarra Ibanez SA GIO GSA60",
         imagen: "../assets/img/guitarra3.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
         precio: 678.29
     },
     {
         id: "ltd",
         titulo: "Guitarra LTD MH Series MH-10",
         imagen: "../assets/img/guitarra4.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
         precio: 940.99
     },
     {
         id: "artcore",
         titulo: "Guitarra AS Artcore AS53 semi hollow",
         imagen: "../assets/img/ibanez2.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
         precio: 975.69
     },
     {
         id: "cave-lp",
         titulo: "Antenna By Cave In LP",
         imagen: "../assets/img/cave.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 9
     },
     {
         id: "nevermind-lp",
         titulo: "Nevermind By Nirvana LP",
         imagen: "../assets/img/nirvana.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 15
     },
     {
         id: "whitepony-lp",
         titulo: "White Pony By Deftones LP",
         imagen: "../assets/img/deft.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 30
     },
     {
         id: "jeromes-lp",
         titulo: "The Gray In Between By Jeromes Dream LP",
-        imagen: "../assets/img/Jeromes.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
+        imagen: "../assets/img/Jeromes.jpeg",
         precio: 20
     },
     {
         id: "korn-lp",
         titulo: "Follow The Leader By Korn",
         imagen: "../assets/img/korn.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 10
     },
     {
         id: "bookburner-lp",
         titulo: "Book Burner By Pig Destroyer LP",
         imagen: "../assets/img/pig.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 5
     },
     {
         id: "slipknot-lp",
         titulo: "Slipknot By Slipknot LP",
         imagen: "../assets/img/slipknot.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 12
     },
     {
         id: "system-lp",
         titulo: "System Of A Down By System Of A Down LP",
         imagen: "../assets/img/system.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 23
     },
     {
         id: "lateralus-lp",
         titulo: "Lateralus By Tool LP",
         imagen: "../assets/img/tool.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 35
     },
     {
         id: "glowon-lp",
         titulo: "Glow On By Turnstile LP",
         imagen: "../assets/img/turnstile.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 25
     },
     {
         id: "smashing-lp",
         titulo: "Mellon Collie & The Infinite Sadness By The Smashing Pumpkings",
         imagen: "../assets/img/smashing.jpg",
-        categoria: {
-            nombre: "Vinilos",
-            id: "vinilos"
-        },
         precio: 92
     },
+    {   id: "mukiltearth-lp",
+        titulo: "Mukiltearth By The Fall of Troy",
+        imagen: "../assets/img/tfot.jpg",
+        precio: 40
+    },
+    {
+        id: "amp-orange1",
+        titulo: "Amplificador Orange Crush 35RT",
+        imagen: "../assets/img/orange1.jpg",
+        precio: 725.79
+    },
+    {
+        id: "amp-champion",
+        titulo: "Amplificador Champion™ 50XL",
+        imagen: "../assets/img/champion.jpg",
+        precio: 309.99
+    },
+    {
+        id: "amp-tone1",
+        titulo: "Amplificador Tone Master® Super Reverb®",
+        imagen: "../assets/img/tone2.jpg",
+        precio: 1599.00
+    },
+    {
+        id: "amp-tone2",
+        titulo: "Amplificador Tone Master® Twin Reverb®",
+        imagen: "../assets/img/tonemaster.jpg",
+        precio: 1389.00
+    },
+    {
+        id: "amp-katana",
+        titulo: "Amplificador Boss Katana 50 MkII",
+        imagen: "../assets/img/boss.jpg",
+        precio: 1055.52
+    },
+    {
+        id: "amp-roland",
+        titulo: "Amplificador Roland Acs Live Lt Acoustic Singer Live",
+        imagen: "../assets/img/rongar.jpg",
+        precio: 1406.15
+    },
+    {
+        id: "amp-marshall1",
+        titulo: "Amplificador Marshall MG Carbon Fibre MG50CFX Transistor",
+        imagen: "../assets/img/marshall1.jpg",
+        precio: 809.99
+    },
+    {
+        id: "amp-marshall2",
+        titulo: "Amplificador Marshall Mb15 (bass)",
+        imagen: "../assets/img/marshall2.jpg",
+        precio: 1000
+    },
+    {
+        id: "amp-marshall3",
+        titulo: "Amplificador Marshall Mb30 (bass)",
+        imagen: "../assets/img/marshall3.jpg",
+        precio: 683.93
+    },
+    {
+        id: "abrigo-02",
+        titulo: "Abrigo 02",
+        imagen: "./img/abrigos/02.jpg",
+        precio: 1000
+    },
+    {
+        id: "amp-orange2",
+        titulo: "Amplificador Orange Crush Pix CR50BXT Transistor",
+        imagen: "../assets/img/orange2.jpg",
+        precio: 929.21
+    },
+    {
+        id: "amp-peavey",
+        titulo: "Amplificador Peavey Rage 258 Woofer 8 Eq 3",
+        imagen: "../assets/img/peavey1.jpg",
+        precio: 457.47
+    },
+    {
+        id: "amp-evh",
+        titulo: "Amplificador Fender Evh 5150 212st",
+        imagen: "../assets/img/evh.jpg",
+        precio: 3657.04
+    }
 ]
 
-const contenedorProductos = document.querySelector("#contenedor-productos");
-let botonesAgregar = document.querySelectorAll(".producto-agregar");
-const numerito = document.querySelector("#numerito");
+const contenedorProductos = document.querySelector("#contenedor-productos")
+let botonesAgregar = document.querySelectorAll(".producto-agregar")
+const numerito = document.querySelector("#numerito")
 
 function cargarProductos(productosElegidos) {
 
@@ -226,10 +241,11 @@ function agregarAlCarrito(e) {
         position: "right", 
         stopOnFocus: true, 
         style: {
-          background: "linear-gradient(to right, #4b33a8, #785ce9)",
+          background: "linear-gradient(to left, #f9c433 , rgb(19, 19, 19))",
           borderRadius: "2rem",
           textTransform: "uppercase",
-          fontSize: ".75rem"
+          fontSize: ".75rem",
+          fontFamily: "Roboto mono"
         },
         offset: {
             x: '1.5rem', 
