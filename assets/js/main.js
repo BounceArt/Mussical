@@ -1,12 +1,11 @@
 let productos = []
-
-fetch("./js/productos.json")
+ruta = "./productos.json"
+fetch(ruta)
     .then(response => response.json())
     .then(data => {
         productos = data;
         cargarProductos(productos)
     })
-
 const contenedorProductos = document.querySelector("#contenedor-productos")
 let botonesAgregar = document.querySelectorAll(".producto-agregar")
 const contador = document.querySelector("#contador")
