@@ -3,7 +3,7 @@ ruta = "./productos.json"
 fetch(ruta)
     .then(response => response.json())
     .then(data => {
-        productos = data;
+        productos = data
         cargarProductos(productos)
     })
 const contenedorProductos = document.querySelector("#contenedor-productos")
@@ -12,7 +12,7 @@ const contador = document.querySelector("#contador")
 
 function cargarProductos(productosElegidos) {
 
-    contenedorProductos.innerHTML = "";
+    contenedorProductos.innerHTML = ""
 
     productosElegidos.forEach(producto => {
 
@@ -25,7 +25,7 @@ function cargarProductos(productosElegidos) {
                 <p class="producto-precio">$${producto.precio}</p>
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
             </div>
-        `;
+        `
 
         contenedorProductos.append(div)
     }) 
@@ -35,7 +35,7 @@ function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar")
 
     botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito);
+        boton.addEventListener("click", agregarAlCarrito)
     });
 }
 actualizarBotonesAgregar()
@@ -45,9 +45,9 @@ let productosEnCarritoLS = localStorage.getItem("productos-en-carrito")
 
 if (productosEnCarritoLS) {
     productosEnCarrito = JSON.parse(productosEnCarritoLS);
-    actualizarcontador();
+    actualizarcontador()
 } else {
-    productosEnCarrito = [];
+    productosEnCarrito = []
 }
 
 function agregarAlCarrito(e) {
@@ -73,24 +73,23 @@ function agregarAlCarrito(e) {
       }).showToast();
 
     const idBoton = e.currentTarget.id;
-    const productoAgregado = productos.find(producto => producto.id === idBoton);
+    const productoAgregado = productos.find(producto => producto.id === idBoton)
 
     if (productosEnCarrito.some(producto => producto.id === idBoton)) {
-        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
-        productosEnCarrito[index].cantidad++;
+        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton)
+        productosEnCarrito[index].cantidad++
     } else {
-        // Agrega la propiedad 'cantidad' al producto e inicialízala en 1.
-        productoAgregado.cantidad = 1;
-        productosEnCarrito.push(productoAgregado);
+        productoAgregado.cantidad = 1
+        productosEnCarrito.push(productoAgregado)
     }
 
     actualizarcontador();
 
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
 }
 
 
 function actualizarcontador() {
-    let nuevocontador = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    let nuevocontador = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)
     contador.innerText = nuevocontador;
 }
