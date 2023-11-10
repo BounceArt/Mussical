@@ -1,9 +1,21 @@
 [
     {
-        "id": "cort-x100",
+        "id": "newen",
+        "titulo": "Guitarra Newen Newen rock Rock",
+        "imagen": "../assets/img/guitarra1.jpg",
+        "precio": 1499.00
+    },
+    {
+        "id": "cort2",
         "titulo": "Guitarra Cort X Series X100",
         "imagen": "../assets/img/guitarra2.jpg",
         "precio": 899.00
+    },
+    {
+        "id": "cort1",
+        "titulo": "Guitarra Cort CR Series CR200",
+        "imagen": "../assets/img/guitarra5.jpg",
+        "precio": 8556.99
     },
     {
         "id": "ibanez",
@@ -148,12 +160,6 @@
         "titulo": "Amplificador Marshall Mb30 (bass)",
         "imagen": "../assets/img/marshall3.jpg",
         "precio": 683.93
-    },
-    {
-        "id": "abrigo-02",
-        "titulo": "Abrigo 02",
-        "imagen": "./img/abrigos/02.jpg",
-        "precio": 1000
     },
     {
         "id": "amp-orange2",
