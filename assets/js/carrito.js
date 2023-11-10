@@ -127,15 +127,25 @@ function actualizarTotal() {
     total.innerText = `$${totalCalculado}`
 }
 
-botonComprar.addEventListener("click", comprarCarrito);
-function comprarCarrito() {
+botonComprar.addEventListener("click", comprarCarrito)
+async function comprarCarrito() {
+    const resultado = await Swal.fire({
+        title: '¿Estás seguro?',
+        icon: 'question',
+        html: `Usted va a comprar ${productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)} productos.`,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'Sí',
+        cancelButtonText: 'No'
+    });
 
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
-    
-    contenedorCarritoVacio.classList.add("disabled")
-    contenedorCarritoProductos.classList.add("disabled")
-    contenedorCarritoAcciones.classList.add("disabled")
-    contenedorCarritoComprado.classList.remove("disabled")
+    if (resultado.isConfirmed) {
+        productosEnCarrito.length = 0;
+        localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 
+        contenedorCarritoVacio.classList.add("disabled");
+        contenedorCarritoProductos.classList.add("disabled");
+        contenedorCarritoAcciones.classList.add("disabled");
+        contenedorCarritoComprado.classList.remove("disabled");
+    }
 }

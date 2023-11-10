@@ -1,4 +1,5 @@
 let productos = []
+
 ruta = "../assets/js/productos.json"
 fetch(ruta)
     .then(response => response.json())
@@ -11,7 +12,6 @@ let botonesAgregar = document.querySelectorAll(".producto-agregar")
 const contador = document.querySelector("#contador")
 
 function cargarProductos(productosElegidos) {
-
 
 
     productosElegidos.forEach(producto => {
