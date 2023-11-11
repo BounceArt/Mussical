@@ -220,6 +220,10 @@ section article button {
   max-height: 14rem;
 }
 
+.titulo-principal {
+  margin-bottom: 30px;
+}
+
 .contenedor-carrito {
   display: flex;
   flex-direction: column;
@@ -228,6 +232,7 @@ section article button {
 
 .carrito-vacio {
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .carrito-comprado {

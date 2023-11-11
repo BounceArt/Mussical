@@ -1,3 +1,6 @@
+.titulo-principal{
+  margin-bottom: 30px;
+}
 .contenedor-carrito {
     display: flex;
     flex-direction: column;
@@ -6,6 +9,7 @@
   
   .carrito-vacio{
     color: $color-c;
+    text-align: center;
   }
   .carrito-comprado {
     color: $color-c;
