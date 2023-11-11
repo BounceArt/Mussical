@@ -23,6 +23,16 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(58, 57, 57);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #f9c433;
+  border-radius: 5px;
+}
 
 .navbar-nav {
   font-family: Akira;
