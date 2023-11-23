@@ -15,7 +15,7 @@ $margen1: 24px;
 @import "instrumentos";
 @import "vinilos";
 @import "carrito";
-
+@import "historial";
 // mixin general
 @mixin cardbody($color-a, $font-2, $color-b, $color-c) {
         background-color: #1a1a1a;

@@ -29,6 +29,7 @@
               <a class="nav-link" href="amplificadores.html">Amplificadores</a>
               <a class="nav-link" href="contacto.html">Contacto</a>
               <a class="nav-link" href="carrito.html" > <i class="bi bi-cart-fill"></i> Carrito <span id="contador" class="contador">0</span></a>
+              <a class="nav-link" href="historial.html">Historial</a>         
             </div>
           </div>
         </div>
@@ -61,6 +62,29 @@
 
         </div>
     </main>
+    <h2>Datos de compra</h2>
+    <form id="formulario">
+        <label for="nombre">Nombres</label>
+        <input type="text" id="nombre">
+    
+        <label for="apellido">Apellidos</label>
+        <input type="text" id="apellido">
+    
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo">
+    
+        <label for="telefono">Número de Celular</label>
+        <input type="tel" id="telefono">
+    
+        <label for="formaPago">Forma de Pago</label>
+        <select id="formaPago">
+            <option value="transferencia">Transferencia Bancaria</option>
+            <option value="debito">Tarjeta de Débito</option>
+            <option value="credito">Tarjeta de Crédito</option>
+        </select>
+    
+        <button type="button" id="boton-form">Enviar datos</button>
+    </form>
     <!--Footer-->
     <footer class="text-dark pt-5 pb-4 bg-dark.bg-gradient" data-aos="zoom-in">
         <div class="container text-center text-md-start">

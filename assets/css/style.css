@@ -329,6 +329,40 @@ section article button {
   display: none;
 }
 
+#formulario {
+  font-family: Akira;
+  color: Roboto mono;
+  margin: auto;
+  max-width: 400px;
+  margin-top: 30px;
+}
+#formulario label {
+  color: #f9c433;
+}
+#formulario button {
+  border: 0;
+  background-color: #f9c433;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#vaciar-historial {
+  border: 0;
+  background-color: #f9c433;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+ul {
+  color: #f9c433;
+}
+
 .card-body {
   background-color: #1a1a1a;
   color: #f9c433;
