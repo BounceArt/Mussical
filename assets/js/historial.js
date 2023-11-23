@@ -1,8 +1,8 @@
-const historialCompras = JSON.parse(localStorage.getItem("historial-compras"))
+const historialCompras = JSON.parse(localStorage.getItem("historial-compras")) || []
 const contenedor = document.getElementById("historialCompras")
 const botonVaciar = document.getElementById("vaciar-historial")
 
-if (historialCompras.length > 0) {
+if (historialCompras.length !== null) {
     historialCompras.forEach(compra => {
         const div = document.createElement("div")
         div.innerHTML = `
